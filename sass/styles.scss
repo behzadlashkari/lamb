@@ -5,7 +5,7 @@
 $screen:  "only screen" !default;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
-$screen-lg-min: 1200px;
+$screen-lg-min: 1600px;
 $tablet:  "#{$screen} and (min-width: #{$screen-sm-min})" !default;
 $normal:  "#{$screen} and (min-width: #{$screen-md-min})";
 $wide:    "#{$screen} and (min-width: #{$screen-lg-min})";
@@ -382,9 +382,15 @@ a {
     width:100%;
     @media #{$tablet} {
       width: auto;
+      height: 600px;
+      margin: 0 auto;
+    }
+    @media #{$wide} {
+      width: auto;
       height: 850px;
       margin: 0 auto;
     }
+
   }
   .carousel-caption {
     background:rgba(155, 155, 155, 0.8);
