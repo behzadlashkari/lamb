@@ -1012,6 +1012,11 @@ a {
   width: 100%; }
   .carousel .img-fluid {
     width: 100%; }
+    @media only screen and (min-width: 768px) {
+      .carousel .img-fluid {
+        width: auto;
+        height: 850px;
+        margin: 0 auto; } }
   .carousel .carousel-caption {
     background: rgba(155, 155, 155, 0.8);
     padding: 20px; }

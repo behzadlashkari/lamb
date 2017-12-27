@@ -380,6 +380,11 @@ a {
   width:100%;
   .img-fluid {
     width:100%;
+    @media #{$tablet} {
+      width: auto;
+      height: 850px;
+      margin: 0 auto;
+    }
   }
   .carousel-caption {
     background:rgba(155, 155, 155, 0.8);
