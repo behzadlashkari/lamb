@@ -12,6 +12,7 @@ $wide:    "#{$screen} and (min-width: #{$screen-lg-min})";
 
 $green: #518A92;
 $grey:  #6b6b6b;
+$background_grey: #D6D6D6;
 
 button {
   padding:0;
@@ -88,7 +89,7 @@ body.index, body.homepage {
 }
 
 body.projects {
-  background-image: url('../images/grey-wallpaper.jpg');
+  background-color:$background_grey;
   //background-repeat: no-repeat;
 }
 
@@ -127,18 +128,45 @@ h3, h4, h5, h6 {
 
   position:fixed;
   bottom:0;
-  background:#565656;
+  background:rgba(86, 86, 86, 1);
   width:100%;
   z-index:999;
-
   @media #{$tablet} {
     display:flex;
     justify-content: space-around;
+    background:rgba(86, 86, 86, 0.7);
 
   }
   .container {
     display:flex;
     justify-content: center;
+  }
+  .instagram, .pinterest {
+    max-width:50px;
+    img {
+      width:100%;
+      height:auto;
+    }
+    &:hover, &:focus {
+      a {
+        border-bottom:0 !important;
+      }
+    }
+  }
+}
+
+.pinterest {
+  max-width: 60px !important;
+  margin-top: -10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  @media #{$tablet} {
+    flex-direction:column;
+    justify-content: flex-end;
   }
 }
 
@@ -358,7 +386,7 @@ a {
   }
 
   .services {
-    background-color:$green;
+    background-color:#000;
     padding:50px;
     text-align:center;
     p {

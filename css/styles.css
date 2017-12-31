@@ -795,7 +795,7 @@ body.index, body.homepage {
   background: #ccc; }
 
 body.projects {
-  background-image: url("../images/grey-wallpaper.jpg"); }
+  background-color: #D6D6D6; }
 
 header {
   padding: 20px 10px; }
@@ -835,7 +835,8 @@ h3, h4, h5, h6 {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: distribute;
-      justify-content: space-around; } }
+      justify-content: space-around;
+      background: rgba(86, 86, 86, 0.7); } }
   .nav-desk .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -843,6 +844,38 @@ h3, h4, h5, h6 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+  .nav-desk .instagram, .nav-desk .pinterest {
+    max-width: 50px; }
+    .nav-desk .instagram img, .nav-desk .pinterest img {
+      width: 100%;
+      height: auto; }
+    .nav-desk .instagram:hover a, .nav-desk .instagram:focus a, .nav-desk .pinterest:hover a, .nav-desk .pinterest:focus a {
+      border-bottom: 0 !important; }
+
+.pinterest {
+  max-width: 60px !important;
+  margin-top: -10px; }
+
+.social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  @media only screen and (min-width: 768px) {
+    .social-icons {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; } }
 
 .navbar-nav .nav-item.active .nav-link, .navbar-nav .nav-item:hover .nav-link, .navbar-nav .nav-item:focus .nav-link {
   border-bottom: 1px solid #fff;
@@ -994,7 +1027,7 @@ a {
     text-align: left; }
 
 .index .services {
-  background-color: #518A92;
+  background-color: #000;
   padding: 50px;
   text-align: center; }
   .index .services p {
