@@ -986,15 +986,26 @@ a {
   background-image: url("../images/front_background_2.jpg"); }
 
 .index .initial-load {
-  background-image: url("../images/front_background_2.jpg");
+  background-image: url("../images/living_room1.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   background-position: center; }
+  .index .initial-load:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0; }
 
 .index .logo-wrapper {
   padding-top: 30px; }
+  .index .logo-wrapper img {
+    z-index: 999;
+    position: relative; }
 
 .index .text-center {
   position: static; }
@@ -1006,7 +1017,8 @@ a {
   bottom: 30px;
   left: 50%;
   -webkit-transform: translate(-50%);
-  transform: translate(-50%); }
+  transform: translate(-50%);
+  z-index: 999; }
 
 .index .about-us {
   background: #ededed;
@@ -1122,3 +1134,6 @@ a {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1; } }
+
+.email-link {
+  color: #878383; }

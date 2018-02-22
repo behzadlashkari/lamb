@@ -334,16 +334,30 @@ a {
 
 .index {
   .initial-load {
-    background-image:url('../images/front_background_2.jpg');
+    //background-image:url('../images/front_background_2.jpg');
+    background-image:url('../images/living_room1.jpg');
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     position:relative;
     background-position: center;
+    &:after {
+      content:'';
+      position:absolute;
+      height:100%;
+      width:100%;
+      background:rgba(0,0,0,0.3);
+      top:0;
+      left:0;
+    }
   }
   .logo-wrapper {
     padding-top:30px;
     //background:rgba(0, 0, 0, 0.6);
+    img {
+      z-index: 999;
+      position: relative;
+    }
   }
   .text-center {
     position:static;
@@ -356,6 +370,7 @@ a {
     bottom: 30px;
     left: 50%;
     transform: translate(-50%);
+    z-index:999;
     .fa-chevron-down {
 
 
@@ -451,4 +466,8 @@ a {
 .slide-fade {
   @include mui-animation(slide,fade);
   animation-duration: 1s;
+}
+
+.email-link {
+  color:#878383;
 }
