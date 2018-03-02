@@ -336,11 +336,17 @@ a {
   .initial-load {
     //background-image:url('../images/front_background_2.jpg');
     background-image:url('../images/living_room1.jpg');
-    height: 100vh;
+    height: 45vh;
     background-repeat: no-repeat;
     background-size: cover;
     position:relative;
     background-position: center;
+    @media #{$tablet} {
+      height:60vh;
+    }
+    @media #{$normal} {
+      height:100vh;
+    }
     &:after {
       content:'';
       position:absolute;
@@ -371,6 +377,10 @@ a {
     left: 50%;
     transform: translate(-50%);
     z-index:999;
+    display:none;
+    @media #{$tablet} {
+      display:block;
+    }
     .fa-chevron-down {
 
 
